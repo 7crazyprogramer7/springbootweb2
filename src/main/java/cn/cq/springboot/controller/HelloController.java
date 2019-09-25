@@ -5,10 +5,10 @@ import com.google.gson.Gson;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
 public class HelloController {
 
-    @ResponseBody
+   
     @RequestMapping(value = "/hello",method = RequestMethod.POST,consumes = "application/json")
     public String hello(@RequestBody User user) {
         System.out.println(new Gson().toJson(user));
