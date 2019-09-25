@@ -15,9 +15,6 @@ public class HelloController {
         return new Gson().toJson(user);
     }
     @PostMapping(value = "/Login")
-    public String login(String username,String pwd){
-
-        //使用重定向定位资源
-        return "redirect:page/main.html";
+    public void login(String username,String pwd){
     }
 }
