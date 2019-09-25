@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="../favicon/favicon.ico">
+    <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ this is my spring boot web page!!!
+
+ <div id="div1"><h2></h2></div>
+ <button>提交</button>
+ <script>
+     var datajson = '{"name":"张三","id":"123abc"}';
+     $(document).ready(function(){
+         $("button").click(function(){
+             console.log(typeof (datajson));
+             console.log(JSON.stringify(datajson));
+             $.ajax({url:"../hello",
+                    type:"post",
+                    data: datajson,
+                    contentType:"application/json",
+                    dataType:"json",
+                    success:function(result){
+                    console.log(result);
+                    console.log(JSON.stringify(result));
+                    console.log(typeof (JSON.stringify(result)));
+                    $("#div1").html(result);
+                 }});
+         });
+     });
+ </script>
+</body>
+</html>
