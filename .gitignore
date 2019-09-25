@@ -41,7 +41,7 @@ ehthumbs.db
 Thumbs.db
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
