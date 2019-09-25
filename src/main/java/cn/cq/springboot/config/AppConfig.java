@@ -8,14 +8,14 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class AppConfig implements WebMvcConfigurer {
 
-    @Bean
-    public WebMvcConfigurer webMvcConfigurer() {
-        WebMvcConfigurer configurer = new WebMvcConfigurer() {
-            @Override
-            public void addViewControllers(ViewControllerRegistry registry) {
-                registry.addViewController("/").setViewName("login");
-            }
-        };
-        return configurer;
-    }
+//     @Bean
+//     public WebMvcConfigurer webMvcConfigurer() {
+//         WebMvcConfigurer configurer = new WebMvcConfigurer() {
+//             @Override
+//             public void addViewControllers(ViewControllerRegistry registry) {
+//                 registry.addViewController("/").setViewName("login");
+//             }
+//         };
+//         return configurer;
+//     }
 }
