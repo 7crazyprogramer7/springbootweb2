@@ -11,7 +11,7 @@ public class HelloController {
     @ResponseBody
     @RequestMapping(value = "/hello",method = RequestMethod.POST,consumes = "application/json")
     public String hello(@RequestBody User user) {
-         gti
+
         return new Gson().toJson(user);
     }
     @PostMapping(value = "/Login")
