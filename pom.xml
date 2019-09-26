@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cn.cq.springboot</groupId>
-    <artifactId>springboot-web</artifactId>
+    <artifactId>springboot-web2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-web</name>
+    <name>springboot-web2</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
